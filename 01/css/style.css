@@ -1,0 +1,145 @@
+@import url(font.css);
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 18px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+body {
+  background-color: #19A1AE;
+}
+
+.page-content {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.page-content::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 52%;
+  top: -70%;
+  width: 54rem;
+  height: 54rem;
+  border-radius: 54rem;
+  transform: rotate(-150deg);
+  background: linear-gradient(rgba(9, 137, 180, .01), #53FFEE);
+  opacity: .3;
+}
+
+.page-content::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 48%;
+  bottom: -86%;
+  width: 54rem;
+  height: 54rem;
+  border-radius: 54rem;
+  transform: rotate(90deg);
+  background: linear-gradient(rgba(9, 137, 180, .01), #53FFEE);
+  opacity: .3;
+}
+
+.profile-card {
+  width: 19.3rem;
+  text-align: center;
+  font-family: 'Kumbh Sans', Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  background-image: url(../img/card-header-bg.png);
+  background-repeat: no-repeat;
+  border-radius: .8rem;
+  box-shadow: 0 2.8rem 5.5rem -1.1rem rgba(8, 70, 94, .51);
+}
+
+.header {
+  padding: 5rem 0 1.3rem;
+  border-radius: .8rem .8rem 0 0;
+  
+}
+
+.user-img {
+  width: 6rem;
+  height: 6rem;
+  border: .3rem solid #fff;
+  border-radius: 6rem;
+  margin-bottom: .75rem;
+}
+
+.user-name {
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: .7rem;
+}
+
+.user-age {
+  font: 400 1rem "Kumbh Sans";
+  color: #6B7082;
+}
+
+.user-location {
+  color: #6B7082;
+  font-size: .77rem;
+}
+
+.user-stats {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.3rem 0 1.5rem;
+  border-top: 1px solid #E8E9EC;
+}
+
+.user-stats-number {
+  display: block;
+  margin-bottom: .2rem;
+  font-weight: 700;
+  color: #2E3349;
+}
+
+.user-stats-description {
+  font-size: .5rem;
+  font-weight: 400;
+  letter-spacing: .08rem;
+  color: #6B7082;
+}
+
+@media (max-width: 375px) {
+  .profile-card {
+    width: 18rem;
+  }
+}

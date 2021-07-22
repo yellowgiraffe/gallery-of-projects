@@ -94,14 +94,14 @@ body {
 }
 
 .user-img {
-  width: 6rem;
-  height: 6rem;
+  width: 5.8rem;
+  height: 5.8rem;
   margin: 0 auto;
   object-fit: cover;
   border: .3rem solid #fff;
   border-radius: 6rem;
   background-color: #fff;
-  margin-bottom: .75rem;
+  margin-bottom: .9rem;
 }
 
 .user-name {
@@ -144,5 +144,19 @@ body {
 @media (max-width: 375px) {
   .profile-card {
     width: 18rem;
+  }
+  
+  .profile-card {
+    background-position: 50% top;
+  }
+}
+
+@media (max-width: 320px) {
+  .profile-card {
+    width: 16rem;
+  }
+
+  .profile-card {
+    background-position: 50% top;
   }
 }

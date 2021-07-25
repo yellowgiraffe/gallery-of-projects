@@ -44,26 +44,26 @@ body {
 .page-container {
   text-align: center;
   margin: 0 auto;
-  width: 75rem;
+  width: 1200px;
 }
 
 .header {
-  margin: 4rem 0;
+  margin: 64px 0;
 }
 
 .title {
   font-size: 3rem;
   font-weight: 900;
   letter-spacing: .1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .project-preview-img {
-  width: 20rem;
-  height: 12rem;
-  border-radius: 1rem;
-  box-shadow: 0 1rem 1.5rem -1.1rem rgba(8, 70, 94, .51);
-  margin-bottom: 1.2rem;
+  width: 320px;
+  height: 192px;
+  border-radius: 16px;
+  box-shadow: 0 16px 24px -18px rgba(8, 70, 94, .51);
+  margin-bottom: 19px;
   transition: .3s;
 }
 

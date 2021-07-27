@@ -94,8 +94,9 @@ body {
 }
 
 .user-img {
-  width: 106px;
-  height: 106px;
+  width: 96px;
+  height: 96px;
+  box-sizing: content-box;
   margin: 0 auto;
   object-fit: cover;
   border: 5px solid #fff;

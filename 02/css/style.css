@@ -54,6 +54,7 @@ html {
 
 .intro {
   min-height: 100vh;
+  height: 100%;
   background: linear-gradient(90deg, rgba(213, 32, 71, .8), rgb(238, 61, 27, .8)), url(../img/main-bg.jpg);
   background-position: center;
   background-size: cover;
@@ -64,6 +65,7 @@ html {
 
 .intro > .container {
   flex-direction: column;
+  padding-bottom: 50px;
 }
 
 .header {
@@ -94,13 +96,12 @@ html {
   text-transform: uppercase;
   color: #fff;
 }
-/* ====================== */
+
 .header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-/*  ======================  */
 
 .header__menu-burger {
   display: none;
@@ -172,6 +173,7 @@ html {
   text-transform: uppercase;
   letter-spacing: .3rem;
   margin-bottom: 40px;
+  padding-top: 50px;
 }
 
 .intro__subtitle {
@@ -483,6 +485,7 @@ html {
 }
 
 .contact__submit {
+  cursor: pointer;
   padding: 16px 36px;
   border-radius: 6px;
   text-transform: uppercase;
@@ -490,6 +493,7 @@ html {
   border: 1px solid #ED4C5C;
   color: #fff;
   transition: .3s;
+  -webkit-appearance: none;
 }
 
 .contact__submit:hover {

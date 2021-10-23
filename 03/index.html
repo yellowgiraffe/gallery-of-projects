@@ -71,8 +71,9 @@
             <input type="radio" id="radio" class="input input-radio">
             <input type="radio" id="radio" class="input input-radio" disabled>
           </div>
-          <div id="litepicker" class="calendar">
-            <input type="date" id="calendar" class="input input-calendar input-basic">
+          <div class="calendar">
+            <label for="litepicker" class="input-label sub-title">Calendar</label>
+            <input type="text" id="litepicker" class="input input-calendar input-basic" placeholder="Value">
           </div>
         </div>
         <div class="category"></div>
@@ -80,6 +81,8 @@
       </div>
     </section>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/plugins/ranges.js"></script>
   <script src="index.js"></script>
 </body>
 </html>

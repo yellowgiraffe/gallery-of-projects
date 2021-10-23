@@ -57,11 +57,27 @@
             <option value="Option 1">Option 1</option>
             <option value="Option 2">Option 2</option>
           </select>
+          <div class="checkbox-styles">
+            <input id="checkbox" type="checkbox" class="input input-checkbox" checked>
+            <label for="checkbox-active" class="checkbox-label">Option</label>
+            <input id="checkbox-active" type="checkbox" class="input input-checkbox" checked>
+            <input id="checkbox-not-active" type="checkbox" class="input input-checkbox">
+            <input id="checkbox-disable" type="checkbox" class="input input-checkbox" disabled>
+          </div>
+          <div class="radio-styles">
+            <input type="radio" id="radio" class="input input-radio" checked>
+            <label for="radio" class="radio-label">Option</label>
+            <input type="radio" id="radio" class="input input-radio" checked>
+            <input type="radio" id="radio" class="input input-radio">
+            <input type="radio" id="radio" class="input input-radio" disabled>
+          </div>
+          <div id="litepicker" class="calendar"></div>
         </div>
         <div class="category"></div>
         <div class="category"></div>
       </div>
     </section>
   </main>
+  <script src="index.js"></script>
 </body>
 </html>

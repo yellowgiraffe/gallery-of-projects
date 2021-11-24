@@ -1,0 +1,125 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+.page-content {
+  height: 100%;
+  width: 100%;
+  font-family: 'Kumbh Sans', Arial, Helvetica, sans-serif;
+  background: linear-gradient(0deg, rgb(100, 99, 231), rgb(176, 104, 233));
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.questions {
+  position: relative;
+  width: 63%;
+  padding: 65px 95px 80px 0;
+  max-width: 920px;
+  background: url(img/questions-bg.png)no-repeat, #fff;
+  background-size: 964px 944px;
+  background-position: -570px -300px;
+  border-radius: 23px;
+}
+
+.questions::after {
+  content: '';
+  position: absolute;
+  width: 142px;
+  height: 138px;
+  top: 220px;
+  left: -70px;
+  background: url(img/box.png);
+  background-size: 148px 138px;
+}
+
+.questions__title,
+.questions__list {
+  width: 38%;
+  max-width: 350px;
+  margin: 0 0 0 auto;
+}
+
+.questions__title {
+  font-weight: 700;
+  font-size: 2.3rem;
+  margin-bottom: 45px;
+}
+
+.questions__item {
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #e8e8ea;
+}
+
+.questions__question {
+  width: 100%;
+  text-align: left;
+  position: relative;
+  background-color: transparent;
+}
+
+.questions__question::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 7px;
+  top: 40%;
+  right: 0;
+  background-image: url(img/arrow.svg);
+}
+
+.questions__question:hover {
+  color: #f47e56;
+}
+
+.questions__answer {
+  display: none;
+  font-size: .86rem;
+  color: #787887;
+
+}
+
+.open {
+  display: block;
+  font-weight: 700;
+}

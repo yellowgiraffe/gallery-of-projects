@@ -43,7 +43,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .main {
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100%;
   width: 100%;
   max-width: 1440px;
@@ -52,29 +51,33 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .questions {
   position: relative;
-  width: 63%;
-  padding: 65px 95px 80px 0;
+  left: 20px;
+  width: 65%;
   max-width: 920px;
+  height: fit-content;
+  min-height: 510px;
+  padding: 60px 110px 20px 0;
+  margin: 9% auto;
   background: url(img/questions-bg.png)no-repeat, #fff;
   background-size: 964px 944px;
-  background-position: -570px -300px;
+  background-position: -575px -295px;
   border-radius: 23px;
 }
 
 .questions::after {
   content: '';
   position: absolute;
-  width: 142px;
-  height: 138px;
-  top: 220px;
-  left: -70px;
-  background: url(img/box.png);
-  background-size: 148px 138px;
+  width: 182px;
+  height: 178px;
+  top: 205px;
+  left: -92px;
+  background: url(img/box.png) no-repeat;
+  background-size: 188px 178px;
 }
 
 .questions__title,
 .questions__list {
-  width: 38%;
+  width: 41%;
   max-width: 350px;
   margin: 0 0 0 auto;
 }
@@ -82,20 +85,23 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .questions__title {
   font-weight: 700;
   font-size: 2.3rem;
-  margin-bottom: 45px;
+  margin-bottom: 46px;
 }
 
 .questions__item {
   padding-bottom: 18px;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
   border-bottom: 1px solid #e8e8ea;
 }
 
 .questions__question {
+  position: relative;
   width: 100%;
   text-align: left;
-  position: relative;
+  letter-spacing: .03rem;
   background-color: transparent;
+  transition: .3s;
+  padding-right: 20px;
 }
 
 .questions__question::after {
@@ -106,6 +112,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   top: 40%;
   right: 0;
   background-image: url(img/arrow.svg);
+  transition: .3s;
 }
 
 .questions__question:hover {
@@ -114,12 +121,129 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .questions__answer {
   display: none;
+  padding-right: 17px;
   font-size: .86rem;
+  line-height: 1.3rem;
   color: #787887;
+  transition: .2s;
 
 }
 
-.open {
+.questions__item.open > .questions__question {
+  margin-bottom: 10px;
+  color: #1e1f36;
+  text-shadow: 0 0 .6px #333, 0 0 .6px #333;
+}
+
+.questions__item.open > .questions__question::after {
+  transform: rotate(180deg);
+}
+
+.questions__item.open > .questions__answer {
   display: block;
-  font-weight: 700;
+}
+
+@media screen and (max-width: 1280px) {
+  .questions {
+    width: 70%;
+    padding: 60px 80px 20px 0;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .questions {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .questions {
+    width: 75%;
+    background-size: 864px 844px;
+    background-position: -525px -235px;
+  }
+
+  .questions::after {
+    width: 142px;
+    height: 138px;
+    top: 210px;
+    left: -72px;
+    background-size: 148px 138px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .questions {
+    margin-top: 30%;
+    padding: 29% 80px 20px;
+    background: #fff;
+  }
+
+  .questions::after {
+    background-image: url(img/questions-bg-mobile.png);
+    width: 83%;
+    height: 77%;
+    background-size: 100%;
+    left: 4%;
+    top: -220px;
+  }
+
+  .questions__title,
+  .questions__list {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .questions__title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .questions {
+    width: 90%;
+    padding-top: 39%;
+  }
+
+  .questions::after {
+    top: -200px;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  .questions {
+    width: 90%;
+    padding: 38% 60px 20px;
+  }
+
+  .questions::after {
+    top: -165px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .questions {
+    width: 87%;
+  }
+
+  .questions::after {
+    top: -109px;
+  }
+
+  .questions__title {
+    margin-bottom: 40px;
+  }
+
+  .questions__question {
+    font-size: .93rem;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .questions {
+    margin-top: 39.5%;
+    padding: 34% 25px 28px;
+  }
 }

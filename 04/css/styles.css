@@ -89,6 +89,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   font-weight: 700;
   font-size: 2.3rem;
   margin-bottom: 46px;
+  color: #1e1f36;
 }
 
 .questions__item {
@@ -102,6 +103,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   width: 100%;
   text-align: left;
   letter-spacing: .03rem;
+  color: #4b4c5f;
   background-color: transparent;
   padding-right: 20px;
   transition: .3s;
@@ -262,5 +264,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 @media screen and (max-width: 330px) {
   .questions {
     width: 92%;
+    padding: 36% 15px 28px;
   }
 }

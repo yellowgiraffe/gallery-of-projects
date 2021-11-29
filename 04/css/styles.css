@@ -261,7 +261,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 350px) {
   .questions {
     width: 92%;
     padding: 36% 15px 28px;

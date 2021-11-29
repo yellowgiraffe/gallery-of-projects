@@ -4,7 +4,6 @@
   border: 0;
 }
 *,*:before,*:after{
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -34,16 +33,18 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .page-content {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   font-family: 'Kumbh Sans', Arial, Helvetica, sans-serif;
   background: linear-gradient(0deg, rgb(100, 99, 231), rgb(176, 104, 233));
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(100, 99, 231)), to(rgb(176, 104, 233)));
+  background: -o-linear-gradient(bottom, rgb(100, 99, 231), rgb(176, 104, 233));
+  background-size: cover;
 }
 
 .main {
   display: flex;
   justify-content: center;
-  height: 100%;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -55,6 +56,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   width: 65%;
   max-width: 920px;
   height: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   min-height: 510px;
   padding: 60px 110px 20px 0;
   margin: 9% auto;
@@ -100,8 +103,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   text-align: left;
   letter-spacing: .03rem;
   background-color: transparent;
-  transition: .3s;
   padding-right: 20px;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
 }
 
 .questions__question::after {
@@ -113,6 +118,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   right: 0;
   background-image: url(img/arrow.svg);
   transition: .3s;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
 }
 
 .questions__question:hover {
@@ -126,6 +133,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   line-height: 1.3rem;
   color: #787887;
   transition: .2s;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
 
 }
 
@@ -137,6 +146,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .questions__item.open > .questions__question::after {
   transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
 }
 
 .questions__item.open > .questions__answer {
@@ -245,5 +256,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   .questions {
     margin-top: 39.5%;
     padding: 34% 25px 28px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .questions {
+    width: 92%;
   }
 }

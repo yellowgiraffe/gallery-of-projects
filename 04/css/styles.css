@@ -196,7 +196,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   .questions::after {
     background-image: url(img/questions-bg-mobile.png);
     width: 83%;
-    height: 77%;
+    height: 74%;
     background-size: 100%;
     left: 4%;
     top: -220px;
@@ -232,6 +232,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
   .questions::after {
     top: -165px;
+    height: 67%;
   }
 }
 
@@ -242,6 +243,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
   .questions::after {
     top: -109px;
+    height: 55%;
   }
 
   .questions__title {
@@ -254,16 +256,24 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 432px) {
   .questions {
     margin-top: 39.5%;
     padding: 34% 25px 28px;
+  }
+
+  .questions::after {
+    height: 49%;
   }
 }
 
 @media screen and (max-width: 350px) {
   .questions {
-    width: 92%;
     padding: 36% 15px 28px;
+    width: 92%;
+  }
+
+  .questions::after {
+    height: 42%;
   }
 }

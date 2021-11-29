@@ -272,8 +272,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     padding: 36% 15px 28px;
     width: 92%;
   }
+<<<<<<< HEAD
 
   .questions::after {
     height: 42%;
   }
+=======
+>>>>>>> 8fd79ed (update minimal max-width in styles.css)
 }

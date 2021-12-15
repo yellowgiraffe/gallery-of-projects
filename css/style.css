@@ -38,7 +38,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .page-content {
   color: #fff;
   font-family: Montserrat, sans-serif;
-  background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12) no-repeat;
+  /* background: linear-gradient(to right top, #0F2027, #203A43, #2C5364) no-repeat; */
+  background: linear-gradient(to right top, #0f0c29, #302b63, #24243e) no-repeat;
 }
 
 .container {
@@ -56,7 +57,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .title {
   font-size: 3rem;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: .1rem;
   margin-bottom: 16px;
 }
@@ -93,21 +94,36 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   margin-bottom: 40px;
 }
 
-.project__demo-btn {
-  font-size: .8rem;
+.project__btn {
+  font-size: .7rem;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 10px 15px;
+  margin-right: 15px;
+  border-radius: 8px;
+  transition: .3s;
+}
+
+.project__demo-btn {
   background-color: #fff;
   color: #333;
-  padding: 13px 18px;
-  border-radius: 8px;
   border: 2px solid #333;
-  transition: .3s;
 }
 
 .project__demo-btn:hover {
   background-color: #333;
   color: #fff;
+}
+
+.project__source-btn {
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #333;
+}
+
+.project__source-btn:hover {
+  background-color: #fff;
+  color: #333;
 }
 
 .project__preview {

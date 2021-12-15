@@ -95,6 +95,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .project__btn {
+  position: relative;
   font-size: .7rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -105,14 +106,24 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .project__demo-btn {
-  background-color: #fff;
   color: #333;
-  border: 2px solid #333;
 }
 
-.project__demo-btn:hover {
+.project__demo-btn::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: 5px;
   background-color: #333;
-  color: #fff;
+  margin: 0 auto;
+  transition: .2s;
+}
+
+.project__demo-btn:hover::after {
+  width: 80%;
 }
 
 .project__source-btn {

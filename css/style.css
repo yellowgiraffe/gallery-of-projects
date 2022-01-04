@@ -152,3 +152,48 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .project__img:hover {
   transform: scale(1.02);
 }
+
+@media screen and (max-width: 926px) {
+  .title,
+  .sub-title {
+    text-align: center;
+  }
+
+  .project__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project__desc,
+  .project__preview {
+    width: 80%;
+    max-width: 80%;
+  }
+
+  .project__desc {
+    margin-bottom: 30px;
+  }
+
+  .project__about {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 492px) {
+  .header {
+    padding: 50px 0;
+  }
+
+  .project {
+    padding: 40px 20px;
+  }
+  .project__desc,
+  .project__preview {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  html,body{
+    font-size: 14px;
+  }
+}

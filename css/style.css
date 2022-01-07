@@ -38,7 +38,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .page-content {
   color: #fff;
   font-family: Montserrat, sans-serif;
-  /* background: linear-gradient(to right top, #0F2027, #203A43, #2C5364) no-repeat; */
   background: linear-gradient(to right top, #0f0c29, #302b63, #24243e) no-repeat;
 }
 
